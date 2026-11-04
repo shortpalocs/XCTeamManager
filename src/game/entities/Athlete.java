@@ -11,7 +11,7 @@ public class Athlete {
     double potential; // 0-10
 
     // fitness
-    double fitness; // 1-10000
+    double fitness; // 1-100
     double morale; // 1-10
     double confidence; // 1-100
 
@@ -26,6 +26,10 @@ public class Athlete {
         this.fitness = fitness;
         this.morale = morale;
         this.confidence = confidence;
+    }
+    public void train(double fitnessGain) {
+        this.fitness += fitnessGain;
+        if (fitness > 100) {fitness = 100;}
     }
 
     public String getName() {

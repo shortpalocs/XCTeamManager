@@ -1,9 +1,29 @@
 public class GameState {
 
-
-    int currentWeek; // 12 total
+    public int currentWeek = 1; // 12 total
     double budget;
-    Team roster;
+    Team team;
+
+
+    public GameState() {
+        team = new Team();
+        budget = 10000;
+    }
+
+    public Team getTeam() {return team;}
+
+    public void advanceWeek() {
+        if (currentWeek < 12) {
+            currentWeek++;
+        }
+    }
+
+    public int getCurrentWeek() {
+        return currentWeek;
+    }
+    public double getBudget() {
+        return budget;
+    }
 
 
 }
