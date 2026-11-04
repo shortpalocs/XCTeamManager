@@ -1,4 +1,4 @@
-# Road to the Championship 🏃
+# Road to the Championship (YES THIS IS A.I, PLACEHOLDER DESCRIPTION) 🏃
 
 A cross-country team management and simulation game built in Java.
 
