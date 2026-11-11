@@ -11,26 +11,38 @@ public class Athlete {
     double potential; // 0-10
 
     // fitness
+
     double fitness; // 1-100
-    double morale; // 1-10
-    double confidence; // 1-100
+    double willpower;
 
 
 
-    public Athlete(String name, int grade, int speed, double endurance, double potential, double fitness, double morale, double confidence) {
+    public Athlete(String name, int grade, int speed, double endurance, double potential, double fitness, double willpower) {
         this.name = name;
         this.grade = grade;
         this.speed = speed;
         this.endurance = endurance;
         this.potential = potential;
         this.fitness = fitness;
-        this.morale = morale;
-        this.confidence = confidence;
+        this.willpower = willpower;
+        
     }
     public void train(double fitnessGain) {
         this.fitness += fitnessGain;
         if (fitness > 100) {fitness = 100;}
     }
+
+
+    @Override
+public String toString() {
+    return String.format("""
+        Name: %s | Grade: %d | Speed: %d | Endurance: %f | Potential: %f |
+        Fitness: %f | Willpower: %f
+        """,
+        name, grade, speed, endurance, potential, fitness, willpower
+    );
+}
+
 
     public String getName() {
         return name;
@@ -56,11 +68,9 @@ public class Athlete {
         return fitness;
     }
 
-    public double getMorale() {
-        return morale;
+    public double getWillpower() {
+        return willpower;
     }
 
-    public double getConfidence() {
-        return confidence;
-    }
+   
 }

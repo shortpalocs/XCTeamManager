@@ -9,6 +9,7 @@ public class GameState {
         team = new Team();
         budget = 10000;
     }
+    
 
     public Team getTeam() {return team;}
 

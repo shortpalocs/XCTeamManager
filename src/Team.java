@@ -17,7 +17,7 @@ public class Team {
 
         if (athletes.size() < 15) {
             athletes.add(a);
-            System.out.println("Athlete " + a.getName() + " added to roster");
+        //    System.out.println("Athlete " + a.getName() + " added to roster");
         }
         else {
             System.out.println("too many ath");
@@ -90,8 +90,15 @@ public class Team {
 
     }
 
-    public ArrayList<Athlete> getAthletes(ArrayList<Athlete> a) {
-        return a;
+    public ArrayList<Athlete> getAthletes() {
+        return athletes;
+
+    }
+    public void athleteToString() {
+
+        for (Athlete a : athletes) {
+            System.out.println(a.toString());
+    }
 
     }
 
