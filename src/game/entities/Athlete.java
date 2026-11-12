@@ -30,36 +30,45 @@ public class Athlete {
 
 
     
-    
-    
-    
-    
-    
     private final String name;
     private final int grade;
-
     // natural abilities
-    int speed;
-    double endurance; // from 0-100
-    double potential; // 0-10
 
-    // fitness
+    // phys stuff
+    private double lactateThreshold;
+    private double aerobicCapacity;
+    private double speed;
+    private double runningEconomy;
 
-    double fitness; // 1-100
-    double willpower;
+    // physical condition 0-100
+    private double fatigue;
+
+    // mental 0-100
+    private double morale;
+    private double confidence;
+    private double discipline;
+
+    // dev
+    private int potential;
 
 
+    
+    
 
 
-
+    // FIX THIS CONSTRUCTOR WITH UPDATED VARIABLES
     public Athlete(String name, int grade, int speed, double endurance, double potential, double fitness, double willpower) {
         this.name = name;
         this.grade = grade;
         this.speed = speed;
-        this.endurance = endurance;
-        this.potential = potential;
-        this.fitness = fitness;
-        this.willpower = willpower;
+        // CLAMP AEROBIC CAPACITY FROM 0-100, LACTATE THRES, SPEED, RUNNING ECONOMY
+        /* START FATIGUE AT 0
+        MORALE AT 80
+        CONFI AT 75
+        DISCIP AT 70
+        potential = Math.min(10, Math.max(1, potential))
+        */ 
+    
         
     }
     public void train(double fitnessGain) {
@@ -87,7 +96,7 @@ public String toString() {
         return grade;
     }
 
-    public int getSpeed() {
+  /*   public int getSpeed() {
         return speed;
     }
 
@@ -106,6 +115,6 @@ public String toString() {
     public double getWillpower() {
         return willpower;
     }
-
+    */
    
 }
