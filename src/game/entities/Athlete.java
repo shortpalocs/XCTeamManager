@@ -2,6 +2,39 @@ package game.entities;
 
 public class Athlete {
 
+    
+    
+    
+    
+    /* ATHLETE CONDITIONS:
+    
+
+
+                                                ┌─────────────────────────────────────────┐
+                                                │                 Athlete                 │
+                                                └────────────────────┬────────────────────┘
+                                                                    │
+                                                ┌──────────────────┬───────────┴───────────┬──────────────────┐
+                                                ▼                  ▼                       ▼                  ▼
+                                        ┌───────────────┐  ┌───────────────┐       ┌───────────────┐  ┌───────────────┐
+                                        │ Physiological │  │   Condition   │       │    Mental     │  │  Development  │
+                                        ├───────────────┤  ├───────────────┤       ├───────────────┤  ├───────────────┤
+                                        │ Aerobic Cap   │  │ Fatigue       │       │ Morale        │  │ Potential     │
+                                        │ Threshold     │  │ Readiness     │       │ Confidence    │  │ Consistency   │
+                                        │ Speed         │  └───────────────┘       │ Discipline    │  └───────────────┘
+                                        │ Economy       │                          └───────────────┘
+                                        └───────────────┘
+*/
+
+
+
+
+    
+    
+    
+    
+    
+    
     private final String name;
     private final int grade;
 
@@ -14,6 +47,8 @@ public class Athlete {
 
     double fitness; // 1-100
     double willpower;
+
+
 
 
 

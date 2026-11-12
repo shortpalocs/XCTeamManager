@@ -1,4 +1,6 @@
 import java.util.ArrayList;
+
+import game.Team;
 import game.entities.*;
 public class Main {
 

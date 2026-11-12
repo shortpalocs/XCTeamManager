@@ -1,3 +1,6 @@
+import game.Team;
+import game.Workout;
+
 public class GameState {
 
     public int currentWeek = 1; // 12 total

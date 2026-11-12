@@ -1,4 +1,6 @@
 import java.util.Random;
+
+import game.Team;
 import game.entities.Athlete;
 import data.Constants;
 class Recruitment {
