@@ -25,16 +25,23 @@ public class Workout {
     private String name;  // name of workout
     private int intensity; // intensity 1-10
 
-    private double speedDevelopment; // how much speed you gain
-    private double enduranceDevelopment; // how much endurance yo gain
-    private double costFatigue; // how fatigued you get
+    private double aerobicStimulus; // 0-100
+    private double thresholdStimulus;
+    private double speedStimulus;
+    private double runningEconStimulus;
+    private double fatigue;
 
-    public Workout(String name, int intensity, double speedDevelopment, double enduranceDevelopment, double costFatigue) {
-        this.name = name;
-        this.intensity = intensity;
-        this.speedDevelopment = speedDevelopment;
-        this.enduranceDevelopment = enduranceDevelopment;
-        this.costFatigue = costFatigue;
+    public Workout(String name, int intensity, double aerobicStimulus, double thresholdStimulus, double speedStimulus, double runningEconStimulus, double fatigue) {
+
+
+        this.name = name; // workout name
+        this.intensity = intensity; // wokrout intensity
+        this.aerobicStimulus = aerobicStimulus; // how much aerobic benefit you get from this workout, base off intensity
+        this.thresholdStimulus = thresholdStimulus; // speed
+        this.speedStimulus = speedStimulus;
+        this.runningEconStimulus = runningEconStimulus;
+        this.fatigue = fatigue;
+
     }
 
     public String getName() {
@@ -45,16 +52,32 @@ public class Workout {
         return intensity;
     }
 
-    public double getSpeedDevelopment() {
-        return speedDevelopment;
+    public double getAerobicStimulus() {
+        return aerobicStimulus;
     }
 
-    public double getEnduranceDevelopment() {
-        return enduranceDevelopment;
+    public double getThresholdStimulus() {
+        return thresholdStimulus;
+    }
+
+    public double getRunningEconStimulus() {
+        return runningEconStimulus;
+    }
+
+    public double getFatigue() {
+        return fatigue;
+    }
+
+    public double getSpeedStimulus() {
+        return speedStimulus;
+    }
+
+    public double getAerobicDevelopment() {
+        return aerobicStimulus;
     }
 
     public double getCostFatigue() {
-        return costFatigue;
+        return fatigue;
     }
 
 
